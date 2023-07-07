@@ -11,6 +11,10 @@ module.exports = {
       fontFamily: {
         josefin: "Josefin Sans",
       },
+      backgroundImage: {
+        mobile: "url('/images/hero-mobile.jpg')",
+        desktop: "url('/images/hero-desktop.jpg')",
+      },
     },
   },
   plugins: [],
