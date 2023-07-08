@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: {
         mobile: "url('/images/hero-mobile.jpg')",
         desktop: "url('/images/hero-desktop.jpg')",
+        patternDesktop: "url('/images/bg-pattern-desktop.svg')",
       },
     },
   },
