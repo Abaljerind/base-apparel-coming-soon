@@ -52,9 +52,12 @@
             id="email"
             placeholder="Email Address"
             required
+            oninvalid="InvalidMsg(this)"
             class="ml-5 w-10/12 rounded-full border-[1px] border-desaturatedRed border-opacity-75 bg-[#FFF6F6] px-6 py-3 outline-none"
           />
-          <button type="submit" class="send-email absolute right-5 top-0 inline-flex w-1/5 items-center justify-center rounded-full p-4 shadow-lg">
+          <p id="email-validity" class="absolute left-11 top-14 text-sm text-softRed"></p>
+          <button type="submit" class="send-email absolute right-5 top-0 inline-flex w-1/5 items-center justify-center rounded-full p-4 shadow-xl">
+            <img src="./images/icon-error.svg" alt="Error Icon" class="absolute right-20 top-3 hidden scale-105" id="error-icon" />
             <img src="./images/icon-arrow.svg" alt="Arrow Icon" class="scale-125" />
           </button>
         </div>
