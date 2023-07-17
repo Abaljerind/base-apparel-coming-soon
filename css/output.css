@@ -683,9 +683,23 @@ video {
   --tw-border-opacity: 0.75;
 }
 
+.border-opacity-50 {
+  --tw-border-opacity: 0.5;
+}
+
 .bg-\[\#FFF6F6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 246 246 / var(--tw-bg-opacity));
+}
+
+.bg-desaturatedRed {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 36% 70% / var(--tw-bg-opacity));
+}
+
+.bg-darkGrayishRed {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 6% 24% / var(--tw-bg-opacity));
 }
 
 .bg-arrow {
@@ -769,6 +783,12 @@ video {
 .text-softRed {
   --tw-text-opacity: 1;
   color: hsl(0 93% 68% / var(--tw-text-opacity));
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none {
