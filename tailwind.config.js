@@ -15,6 +15,8 @@ module.exports = {
         mobile: "url('/images/hero-mobile.jpg')",
         desktop: "url('/images/hero-desktop.jpg')",
         patternDesktop: "url('/images/bg-pattern-desktop.svg')",
+        arrow: "url('/images/icon-arrow.svg')",
+        error: "url('/images/icon-error.svg')",
       },
     },
   },

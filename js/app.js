@@ -1,22 +1,20 @@
-const emailValidity = document.getElementById("email-validity");
-const emailInput = document.getElementById("email");
+const arrowBtn = document.querySelector('.arrow-btn');
+const errorMsg = document.querySelector('.error-msg');
+const errorAlert = document.querySelector('.error-alert');
+const inputField = document.querySelector('.input-field');
 
-// function InvalidMsg(textbox) {
-//   if (textbox.validity.typeMismatch) {
-//     textbox.setCustomValidity("Please provide a valid email");
-//   } else {
-//     textbox.setCustomValidity("");
-//   }
-//   return true;
-// }
+const emailValidation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-function InvalidMsg() {
-  if (emailInput.validity.typeMismatch) {
-    emailValidity.innerHTML = "Please provide a valid email";
-  } else {
-    emailValidity.innerHTML = "";
+const timeout = setInterval(() => {
+  errorMsg.style.display = 'none';
+  errorAlert.style.display = 'none';
+}, 3000);
+
+arrowBtn.addEventListener('click', function() {
+  if (inputField.value.length === 0 || !inputField.value.match(emailValidation)) {
+    errorMsg.style.display = 'inline';
+    errorAlert.style.display = 'inline';
+    errorMsg.textContent = 'Please provide a valid email';
+    return timeout;
   }
-  return true;
-}
-
-// TODO: lanjut benerin script js nya, - jika email yang diisi tidak valid / sesuai dengan tipe email maka tampilkan paragraf 'email-validity' & icon error tetapi jangan tampilkan pesan 'required' nya, - lalu jika input email nya tidak di isi maka biarkan tampilkan pesan 'required' milik HTML nya.
+});

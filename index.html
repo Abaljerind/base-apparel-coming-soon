@@ -45,23 +45,20 @@
       </div>
 
       <!-- input email -->
-      <form>
-        <div class="email-input relative mt-8 flex justify-start">
-          <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            required
-            oninvalid="InvalidMsg(this)"
-            class="ml-5 w-10/12 rounded-full border-[1px] border-desaturatedRed border-opacity-75 bg-[#FFF6F6] px-6 py-3 outline-none"
-          />
-          <p id="email-validity" class="absolute left-11 top-14 text-sm text-softRed"></p>
-          <button type="submit" class="send-email absolute right-5 top-0 inline-flex w-1/5 items-center justify-center rounded-full p-4 shadow-xl">
-            <img src="./images/icon-error.svg" alt="Error Icon" class="absolute right-20 top-3 hidden scale-105" id="error-icon" />
-            <img src="./images/icon-arrow.svg" alt="Arrow Icon" class="scale-125" />
-          </button>
+      <div class="input-section relative w-10/12 mx-auto h-12 flex flex-row mt-11">
+        
+        <input type="email" class="input-field border-desaturatedRed border-[1px] border-opacity-75 bg-[#FFF6F6] outline-none border-solid rounded-full w-full p-7 overflow-hidden" name="input-field" id="input-field" placeholder="Email Address">
+        <label for="input-field" class="error-msg hidden absolute text-softRed top-[130%] left-[10%] text-sm"></label>
+        
+        <div class="error-alert hidden absolute w-14 h-14 right-[20%]">
+          <div class="error-icon bg-error bg-no-repeat bg-center w-14 h-14"></div>
         </div>
-      </form>
+        
+        <div class="arrow-btn cursor-pointer absolute inline-flex justify-center items-center top-[1px] -right-3 send-email w-1/4 h-14 border-none rounded-full overflow-hidden shadow-lg">
+          <div class="arrow-img bg-arrow bg-no-repeat bg-center w-8 h-8 my-0 mx-auto"></div>
+        </div>
+
+      </div>
     </section>
 
     <!-- <footer>
