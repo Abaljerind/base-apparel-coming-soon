@@ -584,6 +584,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -658,6 +662,10 @@ video {
   overflow: hidden;
 }
 
+.overscroll-none {
+  overscroll-behavior: none;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -679,10 +687,6 @@ video {
   border-color: hsl(0 36% 70% / var(--tw-border-opacity));
 }
 
-.border-opacity-75 {
-  --tw-border-opacity: 0.75;
-}
-
 .border-opacity-50 {
   --tw-border-opacity: 0.5;
 }
@@ -690,16 +694,6 @@ video {
 .bg-\[\#FFF6F6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 246 246 / var(--tw-bg-opacity));
-}
-
-.bg-desaturatedRed {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 36% 70% / var(--tw-bg-opacity));
-}
-
-.bg-darkGrayishRed {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 6% 24% / var(--tw-bg-opacity));
 }
 
 .bg-arrow {
@@ -725,11 +719,6 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -797,7 +786,7 @@ video {
 }
 
 body.backgrounds {
-  background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-size: cover;
 }
 
@@ -812,16 +801,8 @@ body.backgrounds {
     margin-right: auto;
   }
 
-  .md\:mt-32 {
-    margin-top: 8rem;
-  }
-
   .md\:w-\[375px\] {
     width: 375px;
-  }
-
-  .md\:pb-80 {
-    padding-bottom: 20rem;
   }
 }
 
@@ -850,6 +831,30 @@ body.backgrounds {
     right: 22%;
   }
 
+  .xl\:right-40 {
+    right: 10rem;
+  }
+
+  .xl\:-right-40 {
+    right: -10rem;
+  }
+
+  .xl\:-right-60 {
+    right: -15rem;
+  }
+
+  .xl\:-right-80 {
+    right: -20rem;
+  }
+
+  .xl\:-right-72 {
+    right: -18rem;
+  }
+
+  .xl\:-right-\[300px\] {
+    right: -300px;
+  }
+
   .xl\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -867,16 +872,16 @@ body.backgrounds {
     margin-left: 15rem;
   }
 
-  .xl\:mt-0 {
-    margin-top: 0px;
-  }
-
   .xl\:mt-28 {
     margin-top: 7rem;
   }
 
   .xl\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
   }
 
   .xl\:block {
@@ -899,6 +904,23 @@ body.backgrounds {
     width: 100%;
   }
 
+  .xl\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .xl\:w-\[32\%\] {
+    width: 32%;
+  }
+
+  .xl\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .xl\:w-\[36\%\] {
+    width: 36%;
+  }
+
   .xl\:scale-110 {
     --tw-scale-x: 1.1;
     --tw-scale-y: 1.1;
@@ -907,10 +929,6 @@ body.backgrounds {
 
   .xl\:justify-start {
     justify-content: flex-start;
-  }
-
-  .xl\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .xl\:text-start {

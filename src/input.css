@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body.backgrounds {
-  background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-size: cover;
 }
 
