@@ -18,15 +18,16 @@
     <link rel="stylesheet" href="/css/output.css" />
   </head>
   <body class="backgrounds">
-    <section class="py-16 md:w-[375px] md:pb-80 md:mt-32 md:mx-auto">
+    <section class="py-16 md:w-[375px] md:pb-80 md:mt-32 md:mx-auto xl:w-full xl:pb-0 xl:mt-0 xl:mx-0">
       <!-- logo -->
-      <div class="logo -ml-6 -mt-3 mb-8 scale-75">
+      <div class="logo -ml-6 -mt-3 mb-8 scale-75 xl:scale-110 xl:ml-60 xl:mt-5">
         <img src="./images/logo.svg" alt="logo and text of the product" />
       </div>
 
       <!-- image hero -->
-      <div class="hero">
-        <img src="./images/hero-mobile.jpg" alt="image of the model in mobile version" />
+      <div class="hero xl:relative">
+        <img src="./images/hero-mobile.jpg" alt="image of the model in mobile version" class="xl:hidden" />
+        <img src="./images/hero-desktop.jpg" alt="image of the model in desktop version" class="hidden xl:block xl:absolute xl:-top-40 xl:right-0">
       </div>
 
       <!-- title -->
